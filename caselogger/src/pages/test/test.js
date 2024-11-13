@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Typography, Container, Divider, Button, useFormControl, TextField } from '@mui/material';
+import InhomeTaskInfo from '../../components/form/inhomeTaskInfo';
 
 const Repair = () => {
   return (
@@ -24,10 +25,10 @@ const Repair = () => {
         }}
       >
         <Typography variant="h4" gutterBottom>
-          Repair
+          TEST-PAGE
         </Typography>
         <Divider sx={{marginBottom: 2}}></Divider>
-
+        <InhomeTaskInfo />
 
       </Container>
     </Box>

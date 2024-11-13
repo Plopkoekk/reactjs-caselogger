@@ -10,6 +10,10 @@ import Cfn from './pages/b2b/cfn';
 import Psvka from './pages/b2b/psvka';
 import Gsx from './pages/b2b/projects/gsx';
 import Unhappy from './pages/inhome/projects/unhappy';
+import RfogInstall from './pages/ftth/rfog/install';
+import Tools from './pages/extra/tools';
+import Test from './pages/test/test';
+
 
 const theme = createTheme({
   palette: {
@@ -37,6 +41,9 @@ const App = () => {
             <Route path="/b2b/psvka" element={<Psvka />} />
             <Route path="/b2b/projects/gsx" element={<Gsx />} />
             <Route path="/inhome/projects/unhappy" element={<Unhappy />} />
+            <Route path="/ftth/rfog/install" element={<RfogInstall />} />
+            <Route path="/extra/tools" element={<Tools />} />
+            <Route path="/test/test" element={<Test />} />
           </Routes>
         </Container>
       </Router>

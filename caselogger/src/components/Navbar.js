@@ -27,7 +27,7 @@ const Navbar = () => {
   const handleCloseOtherStuff = () => setAnchorElOtherStuff(null);
 
   return (
-    <AppBar position="static">
+    <AppBar position="sticky">
       <Toolbar>
         {/* Make "Caselogger" a clickable link */}
         <Typography variant="h6" sx={{ flexGrow: 1 }}>
@@ -46,7 +46,7 @@ const Navbar = () => {
           <MenuItem component={Link} to="inhome/install">Install</MenuItem>
           <MenuItem component={Link} to="inhome/repair">Repair</MenuItem>
           <Divider />
-          <MenuItem component={Link} to="inhome/project/unhappy">Project Unhappy Drop</MenuItem>
+          <MenuItem component={Link} to="inhome/projects/unhappy">Project Unhappy Drop</MenuItem>
         </Menu>
 
         {/* FTTH Menu */}
@@ -77,7 +77,7 @@ const Navbar = () => {
           open={Boolean(anchorElB2BProjects)}
           onClose={handleCloseB2BProjects}
         >
-          <MenuItem component={Link} to="b2b/project/gsx">GSX Migration</MenuItem>
+          <MenuItem component={Link} to="b2b/projects/gsx">GSX Migration</MenuItem>
         </Menu>
 
         {/* Other Stuff Menu */}
@@ -87,7 +87,7 @@ const Navbar = () => {
           open={Boolean(anchorElOtherStuff)}
           onClose={handleCloseOtherStuff}
         >
-          <MenuItem>Other Tools</MenuItem>
+          <MenuItem component={Link} to="extra/tools">Other Tools</MenuItem>
         </Menu>
       </Toolbar>
     </AppBar>

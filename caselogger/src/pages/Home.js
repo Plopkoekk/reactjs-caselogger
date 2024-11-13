@@ -1,6 +1,6 @@
 // src/pages/Home.js
 import React from 'react';
-import { Box, Typography, Container } from '@mui/material';
+import { Box, Typography, Container, Divider } from '@mui/material';
 
 const Home = () => {
   return (
@@ -25,10 +25,11 @@ const Home = () => {
         }}
       >
         <Typography variant="h4" gutterBottom>
-          Welcome to Caselogger!
+          Caselogger
         </Typography>
+        <Divider sx={{marginBottom: 2}}></Divider>
         <Typography>
-          This is a placeholder homepage. More features will be added soon.
+          Kies bovenaan de form die je nodig hebt, vul de form in en download of kopieer je caselog gestructureerd.
         </Typography>
       </Container>
     </Box>

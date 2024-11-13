@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography, Container } from '@mui/material';
+import { Box, Typography, Container, Divider } from '@mui/material';
 
 const Unhappy = () => {
   return (
@@ -24,8 +24,9 @@ const Unhappy = () => {
         }}
       >
         <Typography variant="h4" gutterBottom>
-            Project Unhappy Drop
+            Project - Unhappy Drop
         </Typography>
+        <Divider sx={{marginBottom: 2}}></Divider>
         <Typography>
           This is the Project Unhappy Drop page. You can add more content and functionality here.
         </Typography>

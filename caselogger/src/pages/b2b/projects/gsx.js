@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography, Container } from '@mui/material';
+import { Box, Typography, Container, Divider } from '@mui/material';
 
 const Gsx = () => {
   return (
@@ -24,10 +24,11 @@ const Gsx = () => {
         }}
       >
         <Typography variant="h4" gutterBottom>
-          Install
+          Project - GSX Migration
         </Typography>
+        <Divider sx={{marginBottom: 2}}></Divider>
         <Typography>
-          This is the Install page. You can add more content and functionality here.
+          This is the Project - GSX Migration page. You can add more content and functionality here.
         </Typography>
       </Container>
     </Box>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography, Container } from '@mui/material';
+import { Box, Typography, Container, Divider } from '@mui/material';
 
 const Install = () => {
   return (
@@ -26,6 +26,7 @@ const Install = () => {
         <Typography variant="h4" gutterBottom>
           Install
         </Typography>
+        <Divider sx={{marginBottom: 2}}></Divider>
         <Typography>
           This is the Install page. You can add more content and functionality here.
         </Typography>
