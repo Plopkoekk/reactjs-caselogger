@@ -29,7 +29,7 @@ const App = () => {
         <Navbar />
         <Container
           sx={{
-            marginTop: '25px', // Adds 25px margin below the navbar
+            marginTop: '0px', // Adds 0px margin below the navbar
             paddingBottom: 4,  // Adds padding to the bottom of the container
           }}
         >

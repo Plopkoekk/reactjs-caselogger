@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Typography, Container, Divider } from '@mui/material';
+import { InhomeTaskInfo, InstallSituatie, InstallActies, WoliInfo, InhomeFinish, FormButtons } from '../../components/form/FormModules';
 
 const Install = () => {
   return (
@@ -27,9 +28,11 @@ const Install = () => {
           Install
         </Typography>
         <Divider sx={{marginBottom: 2}}></Divider>
-        <Typography>
-          This is the Install page. You can add more content and functionality here.
-        </Typography>
+        <InhomeTaskInfo />
+        <InstallSituatie />
+        <InstallActies />
+        <InhomeFinish />
+        <FormButtons />
       </Container>
     </Box>
   );

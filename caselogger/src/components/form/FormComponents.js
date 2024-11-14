@@ -1,6 +1,8 @@
 import React from 'react';
-import { MenuItem, Divider, Container, FormControl, Grid2, TextField, Typography, InputLabel, FilledInput, InputAdornment } from '@mui/material';
+import { MenuItem, FormControl, Grid2, Typography, InputLabel, FilledInput, Button } from '@mui/material';
 import Select, {SelectChangeEvent} from '@mui/material/Select'
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
+import FileDownloadIcon from '@mui/icons-material/FileDownload';
 
 
 
@@ -14,10 +16,20 @@ export function Klantnummer() {
         />
     </FormControl>    )
 };
+export function Woli() {
+    return (
+        <FormControl variant="filled" fullWidth>
+        <InputLabel htmlFor="woli" >WOLI-nr</InputLabel>
+        <FilledInput
+        fullWidth
+        id="woli"
+        />
+    </FormControl>    )
+}
 export function TaakID() {
     return (
         <FormControl variant="filled" fullWidth>
-            <InputLabel htmlFor="TaakID">TaakID</InputLabel>
+            <InputLabel htmlFor="TaskID">TaskgroupID (SFX) / Klantnummer (Cafe)</InputLabel>
             <FilledInput
             id="TaakID"
             />
@@ -64,6 +76,7 @@ export function Omschrijving(){
             <FilledInput
             fullWidth
             multiline
+            minRows={3}
             id="omschrijving"
             />
         </FormControl>
@@ -153,6 +166,106 @@ export function Streetping(){
         </>
     )
 }
+export function Acties(){
+    return (
+        <>  
+        <FormControl variant="filled" fullWidth>
+            <InputLabel htmlFor="acties" >Acties</InputLabel>
+            <FilledInput
+            fullWidth
+            multiline
+            minRows={3}
+            id="acties"
+            />
+        </FormControl>
+        </>
+    )
+}
+export function Materiaal(){
+    return (
+        <>  
+        <FormControl variant="filled" fullWidth>
+            <InputLabel htmlFor="materiaal" >Extra Materialen</InputLabel>
+            <FilledInput
+            fullWidth
+            multiline
+            minRows={3}
+            id="materiaal"
+            />
+        </FormControl>
+        </>
+    )
+}
+export function Resultaat(){
+    return (
+        <>  
+        <FormControl variant="filled" fullWidth>
+            <InputLabel htmlFor="resultaat" >Resultaat</InputLabel>
+            <FilledInput
+            fullWidth
+            multiline
+            minRows={2}
+            id="resultaat"
+            />
+        </FormControl>
+        </>
+    )
+}
+export function Modemtest(){
+    return (
+        <>  
+        <FormControl variant="filled" fullWidth>
+            <InputLabel htmlFor="modemtest" >Modemtest</InputLabel>
+            <FilledInput
+            fullWidth
+            multiline
+            minRows={2}
+            maxRows={6}
+            id="modemtest"
+            />
+        </FormControl>
+        </>
+    )
+}
+export function CopyCaselogButton(){
+    function copyToClipboard(){
+        console.log("copy to clipboard clicked.");
+    }
+    return (
+        <>
+        <Button 
+            size='large'
+            color='primary'
+            variant='contained' 
+            fullWidth 
+            onClick={copyToClipboard}
+        >
+                <ContentCopyIcon sx={{marginRight: 1}}/>
+                Copy to Clipboard
+        </Button>
+        </>
+    )
+}
+export function DownloadCaselogButton(){
+    function downloadToTXT(){
+        console.log("Download to .TXT clicked.");
+    }
+    return(
+        <>
+        <Button 
+        size='large'
+        color='secondary'
+        variant='contained' 
+        fullWidth
+        onClick={downloadToTXT}
+        >
+            <FileDownloadIcon sx={{marginRight: 1}}/>
+            Download as .txt-file
+        </Button>
+        </>
+    )
+}
+
 
 
 

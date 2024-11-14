@@ -1,9 +1,8 @@
 import React from 'react';
 import { Box, Typography, Container, Divider, FormControl } from '@mui/material';
-import { InhomeTaskInfo, InstallSituatie } from '../../components/form/FormModules';
 
 
-const Repair = () => {
+const Test = () => {
   return (
     <Box
       sx={{
@@ -29,13 +28,10 @@ const Repair = () => {
           TEST-PAGE
         </Typography>
         <Divider sx={{marginBottom: 2}}></Divider>
-        <InhomeTaskInfo />
-        <InstallSituatie />
-
 
       </Container>
     </Box>
   );
 };
 
-export default Repair;
+export default Test;
