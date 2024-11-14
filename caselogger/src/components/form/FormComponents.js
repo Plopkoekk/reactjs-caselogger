@@ -9,14 +9,14 @@ import FileDownloadIcon from '@mui/icons-material/FileDownload';
 export function Klantnummer() {
     return (
         <FormControl variant="filled" fullWidth>
-        <InputLabel htmlFor="Klantnummer" >Klantnummer</InputLabel>
+        <InputLabel htmlFor="klantnummer" >Klantnummer</InputLabel>
         <FilledInput
         fullWidth
-        id="Klantnummer"
-        name='Klantnummer'
+        id="klantnummer"
         />
-    </FormControl>    )
-};
+    </FormControl>
+    );
+}
 export function Woli() {
     return (
         <FormControl variant="filled" fullWidth>
@@ -245,9 +245,6 @@ export function CopyCaselogButton(){
     )
 }
 export function DownloadCaselogButton(){
-    function downloadToTXT(){
-        console.log("Download to .TXT clicked.");
-    }
     return(
         <>
         <Button 
@@ -255,7 +252,7 @@ export function DownloadCaselogButton(){
         color='secondary'
         variant='contained' 
         fullWidth
-        onClick={downloadToTXT}
+        
         >
             <FileDownloadIcon sx={{marginRight: 1}}/>
             Download as .txt-file
