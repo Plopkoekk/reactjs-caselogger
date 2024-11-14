@@ -1,6 +1,8 @@
 // src/pages/Home.js
 import React from 'react';
 import { Box, Typography, Container, Divider } from '@mui/material';
+import Logo from '../img/logo32.png';
+import Changelog from '../components/changelog';
 
 const Home = () => {
   return (
@@ -24,13 +26,17 @@ const Home = () => {
           width: '100%', // Ensure the container takes up full width
         }}
       >
+        
         <Typography variant="h4" gutterBottom>
-          Caselogger
+        <img src={Logo} alt="Logo"/> Caselogger
         </Typography>
         <Divider sx={{marginBottom: 2}}></Divider>
         <Typography>
           Kies bovenaan de form die je nodig hebt, vul de form in en download of kopieer je caselog gestructureerd.
         </Typography>
+        <Divider sx={{marginBottom: 2, marginTop: 2}}/>
+        <Changelog />
+
       </Container>
     </Box>
   );

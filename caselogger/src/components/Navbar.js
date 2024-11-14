@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { AppBar, Toolbar, Typography, Button, Menu, MenuItem, Divider } from '@mui/material';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import Logo from '../img/logo24.png';
 
 const Navbar = () => {
   // State for managing the open/close of the menus
@@ -28,9 +29,11 @@ const Navbar = () => {
 
   return (
     <AppBar position="sticky">
+      
       <Toolbar>
         {/* Make "Caselogger" a clickable link */}
-        <Typography variant="h6" sx={{ flexGrow: 1 }}>
+        <img src={Logo} alt="Logo"/>
+        <Typography variant="h6" sx={{marginLeft: 1, flexGrow: 1 }}>
           <Link to="/" style={{ color: 'inherit', textDecoration: 'none' }}>
             Caselogger
           </Link>

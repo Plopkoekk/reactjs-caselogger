@@ -1,6 +1,6 @@
 import React from 'react';
-import { Box, Typography, Container, Divider, Button, useFormControl, TextField } from '@mui/material';
-import InhomeTaskInfo from '../../components/form/inhomeTaskInfo';
+import { Box, Typography, Container, Divider, FormControl } from '@mui/material';
+import {Adres, InhomeTaskInfoGroup} from '../../components/form/FormComponents';
 
 const Repair = () => {
   return (
@@ -28,7 +28,11 @@ const Repair = () => {
           TEST-PAGE
         </Typography>
         <Divider sx={{marginBottom: 2}}></Divider>
-        <InhomeTaskInfo />
+        <Container>
+            <FormControl>
+                <InhomeTaskInfoGroup />
+            </FormControl>
+        </Container>
 
       </Container>
     </Box>

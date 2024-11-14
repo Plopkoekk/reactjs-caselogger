@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Typography, Container, Divider, Button } from '@mui/material';
+import DownloadIcon from '@mui/icons-material/Download';
 
 
 const Tools = () => {
@@ -28,14 +29,16 @@ const Tools = () => {
           Other Tools
         </Typography>
         <Divider sx={{marginBottom: 2}}></Divider>
-        <Typography variant='h5'>Frustrafix</Typography>
-        <Typography sx={{marginTop:2, marginBottom:2}}>
-            Gemaakt door mezelf.<br></br>
-            Voegt knoppen toe aan je planning voor spot/ants. Voegt ook wat knoppen toe binnen in je taak<br></br>
-            <br></br>
-            <strong>NIEUW!:</strong> Voegt ook de kopieer-functionaliteit van Antscopy toe. Grafieken nog niet voor gekeken.
-        </Typography>
-        <Button variant="contained" href="https://chromewebstore.google.com/detail/frustrafix/obefljbiiicgmfajdhnpaklocbnlnkaf?authuser=0&hl=nl" target='_blank'>Chrome Webstore</Button>
+        <Container>
+            <Typography variant='h5'>Frustrafix</Typography>
+            <Typography sx={{marginTop:2, marginBottom:2}}>
+                Gemaakt door mezelf.<br></br>
+                Voegt knoppen toe aan je planning voor spot/ants. Voegt ook wat knoppen toe binnen in je taak<br></br>
+                <br></br>
+                <strong>NIEUW!:</strong> Voegt ook de kopieer-functionaliteit van Antscopy toe. Grafieken nog niet voor gekeken.
+            </Typography>
+            <Button variant="contained" href="https://chromewebstore.google.com/detail/frustrafix/obefljbiiicgmfajdhnpaklocbnlnkaf?authuser=0&hl=nl" target='_blank'><DownloadIcon /> Chrome Webstore</Button>
+        </Container>
       </Container>
     </Box>
   );
