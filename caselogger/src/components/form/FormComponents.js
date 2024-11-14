@@ -13,6 +13,7 @@ export function Klantnummer() {
         <FilledInput
         fullWidth
         id="Klantnummer"
+        name='Klantnummer'
         />
     </FormControl>    )
 };
@@ -228,9 +229,6 @@ export function Modemtest(){
     )
 }
 export function CopyCaselogButton(){
-    function copyToClipboard(){
-        console.log("copy to clipboard clicked.");
-    }
     return (
         <>
         <Button 
@@ -238,7 +236,7 @@ export function CopyCaselogButton(){
             color='primary'
             variant='contained' 
             fullWidth 
-            onClick={copyToClipboard}
+            
         >
                 <ContentCopyIcon sx={{marginRight: 1}}/>
                 Copy to Clipboard
